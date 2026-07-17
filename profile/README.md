@@ -1,12 +1,30 @@
-## Hi there 👋
+# F-Rent — аренда вещей между людьми
 
-<!--
+**F-Rent** — приложение для аренды вещей напрямую между людьми.
 
-**Here are some ideas to get you started:**
+Найдите нужную вещь рядом, арендуйте её на удобный срок или сдавайте свои вещи и получайте дополнительный доход. В приложении доступны инструменты, техника, электроника, спортивный инвентарь и многое другое.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+---
+
+## Как это работает
+
+1. **Найдите вещь**
+2. **Выберите срок аренды**
+3. **Свяжитесь с владельцем в чате**
+4. **Оплатите аренду в приложении**
+5. **Встретьтесь и заберите вещь**
+
+---
+
+## Безопасность сделки
+
+Перед передачей и после возврата обе стороны фотографируют вещь.  
+Стоимость аренды, залог (при необходимости) и дополнительные условия устанавливает владелец.
+
+---
+
+**F-Rent** — это простой способ экономить на покупках и зарабатывать на вещах, которыми вы редко пользуетесь.
+
+---
+
+**Сайт:** [F-Rent.ru](https://F-Rent.ru)
