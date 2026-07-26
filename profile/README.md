@@ -11,7 +11,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/backend-FastAPI%20%2B%20MySQL-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI + MySQL">
   <img src="https://img.shields.io/badge/Android-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Android · Kotlin">
-  <img src="https://img.shields.io/badge/iOS-SwiftUI%20(develop)-F05138?style=flat-square&logo=swift&logoColor=white" alt="iOS · SwiftUI (develop)">
+  <img src="https://img.shields.io/badge/iOS-SwiftUI%20(dev)-F05138?style=flat-square&logo=swift&logoColor=white" alt="iOS · SwiftUI (dev)">
   <img src="https://img.shields.io/badge/admin-React%20%2B%20TypeScript-61DAFB?style=flat-square&logo=react&logoColor=black" alt="Admin · React + TypeScript">
   <img src="https://img.shields.io/badge/Docker-4%2F9%20repos-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker в 4 репозиториях">
   <img src="https://img.shields.io/badge/repos-private-red?style=flat-square" alt="Репозитории приватные">
@@ -28,7 +28,7 @@
   выплаты через эквайринг Т-Банка, push через FCM.
 - **Мобильное приложение для Android** — Kotlin, единственная публично раздаваемая сборка
   (RuStore).
-- **iOS-клиент** — SwiftUI, код есть, но живёт в ветке `develop`; в `main` пока заглушка, сборки
+- **iOS-клиент** — SwiftUI, код есть, но живёт в ветке `dev`; в `main` пока заглушка, сборки
   нигде не публиковались.
 - **Админка** — React + TypeScript + Vite: модерация товаров, пользователи, заявки.
 - **Боты** — поддержка в VK, набор бета-тестеров в Telegram и служебный бот модерации
@@ -45,7 +45,7 @@
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------- |
 | [F-Rent-Server](https://github.com/F-Rent-products/F-Rent-Server)                 | Бэкенд и API платформы: пользователи, товары, аренды, чаты, платежи, модерация       | Python, FastAPI, SQLAlchemy, MySQL, Redis, Docker    |
 | [F-Rent-Mobile-Android](https://github.com/F-Rent-products/F-Rent-Mobile-Android) | Мобильное приложение для Android — то, что раздаётся пользователям                   | Kotlin, Retrofit/OkHttp, Gradle                      |
-| [F-Rent-Mobile-iOS](https://github.com/F-Rent-products/F-Rent-Mobile-iOS)         | iOS-клиент: код в ветке `develop`, в `main` — заглушка, публичных сборок нет         | Swift, SwiftUI, XcodeGen                             |
+| [F-Rent-Mobile-iOS](https://github.com/F-Rent-products/F-Rent-Mobile-iOS)         | iOS-клиент: код в ветке `dev`, в `main` — заглушка, публичных сборок нет         | Swift, SwiftUI, XcodeGen                             |
 | [F-Rent-Admin-Panel](https://github.com/F-Rent-products/F-Rent-Admin-Panel)       | Админка: модерация товаров, пользователи, работа с заявками                          | React, TypeScript, Vite, Chakra UI, Tailwind CSS     |
 | [F-Rent-Web-Version](https://github.com/F-Rent-products/F-Rent-Web-Version)       | Задел под веб-версию приложения: только README и релизный workflow, кода нет         | не выбран                                            |
 | [F-Rent-VK-Bot](https://github.com/F-Rent-products/F-Rent-VK-Bot)                 | Бот поддержки: обращения пользователей из VK, заявки для админов в VK и Telegram     | Python, vk_api, aiogram, MySQL, Redis, Docker        |
@@ -55,7 +55,7 @@
 
 ## Как мы работаем
 
-- Разработка идёт в ветке `develop`, `main` — то, что считается выпущенным.
+- Разработка идёт в ветке `dev`, `main` — то, что считается выпущенным.
 - В восьми репозиториях из девяти есть `.github/workflows/release.yml`: при merge pull request в
   `main` релиз создаётся автоматически — тег `vГГГГ.ММ.ДД-prN`, заголовок релиза = заголовок PR,
   описание = тело PR, архивы с исходниками прикладывает GitHub. Если тело PR пустое, в описание
@@ -71,8 +71,8 @@
   — в `F-Rent-Admin-Panel` и `F-Rent-VK-Bot`; линтеры и типы без тестов — в `F-Rent-Telegram-Bot` и
   `F-Rent-Product-Bot`; только форматирование и стили — в `F-Rent-Site`; компиляция и тесты без
   линтеров — в `F-Rent-Server` и `F-Rent-Mobile-Android` (шаги `ruff`/`black`/`mypy` и `ktlintCheck`
-  там уже добавлены, но пока лежат в `develop`). CI нет в `F-Rent-Web-Version` (нет кода) и в
-  `F-Rent-Mobile-iOS` — там свой `ios.yml`, и тоже только в `develop`.
+  там уже добавлены, но пока лежат в `dev`). CI нет в `F-Rent-Web-Version` (нет кода) и в
+  `F-Rent-Mobile-iOS` — там свой `ios.yml`, и тоже только в `dev`.
 - У каждого репозитория свой README; общий стандарт — шапка с иконкой и бейджами и разделы
   «Структура», «Быстрый старт», «Конфигурация», «Линтеры и тесты», «Ветки и релизы». Сейчас
   стандарту соответствуют не все — см. «Известные расхождения и ограничения».
@@ -82,14 +82,14 @@
 Только профиль организации: `profile/README.md` и `profile/f-rent-icon.png` — больше в `.github`
 ничего нет, ни workflow, ни кода. Собирать, запускать и настраивать здесь нечего: структура,
 быстрый старт, переменные окружения и линтеры описаны в README продуктовых репозиториев — кроме
-`F-Rent-Mobile-iOS`, где в `main` лежит однострочная заглушка, а подробный README в `develop`.
+`F-Rent-Mobile-iOS`, где в `main` лежит однострочная заглушка, а подробный README в `dev`.
 
 ## Известные расхождения и ограничения
 
 - **Ссылки на репозитории не открываются извне.** Все девять приватные, публичен только `.github`,
   поэтому для читателя без доступа к организации каждая ссылка из таблицы — 404.
 - **iOS-приложения как продукта пока нет.** В `F-Rent-Mobile-iOS` в ветке `main` лежит одна
-  заглушка README, весь код (SwiftUI, Xcode-проект, CI `ios.yml`) — в `develop`. Релизного
+  заглушка README, весь код (SwiftUI, Xcode-проект, CI `ios.yml`) — в `dev`. Релизного
   workflow нет ни в одной ветке, так что merge PR в `main` там не создаст ни релиза, ни тега.
   Сайт раздаёт только Android-сборку — ссылок на App Store нет.
 - **Прямые пуши в `main` — обычная практика, а не исключение для `F-Rent-Admin-Panel`.** Merge PR в
@@ -103,7 +103,7 @@
   `F-Rent-Product-Bot`. У `F-Rent-Server` и `F-Rent-Mobile-Android` в `main` пока README прежней
   структуры — то же содержание, но под другими заголовками («Переменные окружения», «Тесты»,
   «Локальная настройка», «Проверки и качество»), а приведённые к стандарту версии лежат в
-  `develop`. У `F-Rent-Mobile-iOS` в `main` README из одной строки, подробный — тоже в `develop`.
+  `dev`. У `F-Rent-Mobile-iOS` в `main` README из одной строки, подробный — тоже в `dev`.
 - **Безопасность.** В части репозиториев исторически закоммичены рабочие значения — статический
   API-токен в шаблоне конфигурации, токен бота прямо в коде, доступы к тестовому хосту в
   dev-каталоге. Все такие значения считаем раскрытыми: они подлежат ротации и удалению из истории,
